@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vortex Global — Global Operations</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <div class="logo-mark"></div>
+      <div>
+        <span class="logo-text-main">VORTEX</span>
+        <span class="logo-text-sub">Global Industries</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="operations.html" class="active">Global Operations</a></li>
+      <li><a href="services.html">Products & Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <p class="label" style="position:relative;z-index:1;">Worldwide Presence</p>
+    <h1>GLOBAL <span class="accent">OPERATIONS</span></h1>
+    <p>Six continents. Twenty-eight countries. One unified mission.</p>
+  </header>
+
+  <!-- WORLD MAP SVG VISUALIZATION -->
+  <section class="container" style="padding: 5rem 2rem 3rem;">
+    <p class="label anim">Our Reach</p>
+    <h2 class="section-title anim">WHERE WE <span class="accent">OPERATE</span></h2>
+    <div class="anim" style="background:var(--dark-2); border:var(--border); border-radius:16px; padding:3rem 2rem; margin-bottom:3rem; text-align:center;">
+      <!-- SVG world map schematic -->
+      <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:860px; margin:0 auto; display:block;">
+        <!-- Grid lines -->
+        <defs>
+          <pattern id="grid" width="45" height="35" patternUnits="userSpaceOnUse">
+            <path d="M 45 0 L 0 0 0 35" fill="none" stroke="rgba(0,201,167,0.07)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="900" height="420" fill="url(#grid)"/>
+        <!-- Equator -->
+        <line x1="0" y1="210" x2="900" y2="210" stroke="rgba(0,201,167,0.15)" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="10" y="207" fill="rgba(0,201,167,0.4)" font-size="9" font-family="Outfit,sans-serif" letter-spacing="0.12em">EQUATOR</text>
+
+        <!-- CONTINENT OUTLINES (simplified polygons) -->
+        <!-- North America -->
+        <polygon points="60,80 180,70 210,100 240,160 220,200 180,220 140,210 100,180 70,150" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+        <!-- South America -->
+        <polygon points="160,230 220,220 240,260 230,330 200,370 170,360 150,310 140,270" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+        <!-- Europe -->
+        <polygon points="370,60 440,55 470,80 460,120 420,130 380,120 360,100" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+        <!-- Africa -->
+        <polygon points="380,145 440,135 470,160 480,240 460,320 420,350 390,330 365,260 360,190" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+        <!-- Asia -->
+        <polygon points="470,55 660,50 700,80 720,130 680,170 620,180 560,160 510,140 470,110" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+        <!-- Oceania -->
+        <polygon points="680,270 760,260 790,300 760,340 700,340 670,310" fill="rgba(0,201,167,0.08)" stroke="rgba(0,201,167,0.3)" stroke-width="1.5"/>
+
+        <!-- OFFICE DOTS with pulse animation -->
+        <!-- New York -->
+        <circle cx="165" cy="135" r="7" fill="var(--teal)" opacity="0.9"/>
+        <circle cx="165" cy="135" r="14" fill="none" stroke="var(--teal)" stroke-width="1.5" opacity="0.4"><animate attributeName="r" from="7" to="20" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/></circle>
+        <text x="172" y="131" fill="white" font-size="9" font-family="Outfit,sans-serif">New York</text>
+
+        <!-- London -->
+        <circle cx="393" cy="88" r="7" fill="var(--teal)" opacity="0.9"/>
+        <circle cx="393" cy="88" r="14" fill="none" stroke="var(--teal)" stroke-width="1.5" opacity="0.4"><animate attributeName="r" from="7" to="20" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.6" to="0" dur="2.4s" repeatCount="indefinite"/></circle>
+        <text x="400" y="84" fill="white" font-size="9" font-family="Outfit,sans-serif">London</text>
+
+        <!-- Dubai -->
+        <circle cx="530" cy="148" r="7" fill="var(--teal)" opacity="0.9"/>
+        <circle cx="530" cy="148" r="14" fill="none" stroke="var(--teal)" stroke-width="1.5" opacity="0.4"><animate attributeName="r" from="7" to="20" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.6" to="0" dur="1.8s" repeatCount="indefinite"/></circle>
+        <text x="538" y="144" fill="white" font-size="9" font-family="Outfit,sans-serif">Dubai</text>
+
+        <!-- Singapore -->
+        <circle cx="640" cy="190" r="7" fill="var(--teal)" opacity="0.9"/>
+        <circle cx="640" cy="190" r="14" fill="none" stroke="var(--teal)" stroke-width="1.5" opacity="0.4"><animate attributeName="r" from="7" to="20" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.6" to="0" dur="2.2s" repeatCount="indefinite"/></circle>
+        <text x="648" y="186" fill="white" font-size="9" font-family="Outfit,sans-serif">Singapore</text>
+
+        <!-- Tokyo -->
+        <circle cx="710" cy="110" r="6" fill="var(--gold)" opacity="0.9"/>
+        <text x="718" y="106" fill="rgba(255,209,102,0.8)" font-size="8" font-family="Outfit,sans-serif">Tokyo</text>
+
+        <!-- Nairobi -->
+        <circle cx="460" cy="250" r="6" fill="var(--gold)" opacity="0.9"/>
+        <text x="468" y="246" fill="rgba(255,209,102,0.8)" font-size="8" font-family="Outfit,sans-serif">Nairobi</text>
+
+        <!-- São Paulo -->
+        <circle cx="193" cy="315" r="6" fill="var(--gold)" opacity="0.9"/>
+        <text x="201" y="311" fill="rgba(255,209,102,0.8)" font-size="8" font-family="Outfit,sans-serif">São Paulo</text>
+
+        <!-- Sydney -->
+        <circle cx="735" cy="310" r="6" fill="var(--gold)" opacity="0.9"/>
+        <text x="743" y="306" fill="rgba(255,209,102,0.8)" font-size="8" font-family="Outfit,sans-serif">Sydney</text>
+
+        <!-- Connection lines -->
+        <line x1="165" y1="135" x2="393" y2="88" stroke="rgba(0,201,167,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="393" y1="88" x2="530" y2="148" stroke="rgba(0,201,167,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="530" y1="148" x2="640" y2="190" stroke="rgba(0,201,167,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="640" y1="190" x2="710" y2="110" stroke="rgba(0,201,167,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="393" y1="88" x2="460" y2="250" stroke="rgba(255,209,102,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="165" y1="135" x2="193" y2="315" stroke="rgba(255,209,102,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- Legend -->
+        <circle cx="20" cy="390" r="5" fill="var(--teal)"/>
+        <text x="30" y="394" fill="rgba(240,246,252,0.6)" font-size="9" font-family="Outfit,sans-serif">HQ / Major Office</text>
+        <circle cx="160" cy="390" r="5" fill="var(--gold)"/>
+        <text x="170" y="394" fill="rgba(240,246,252,0.6)" font-size="9" font-family="Outfit,sans-serif">Regional Office</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- REGIONAL BREAKDOWN -->
+  <section class="ops-section container">
+    <p class="label anim">By Region</p>
+    <h2 class="section-title anim">OUR <span class="accent">REGIONS</span></h2>
+    <div class="regions-grid">
+      <div class="region-card anim">
+        <div class="region-flag">🌎</div>
+        <h3>AMERICAS</h3>
+        <div class="tagline">Headquarters Region</div>
+        <p>Home to our global HQ and largest workforce. Driving clean energy transition across North and South America.</p>
+        <div class="market-list">
+          <span class="market-tag">🇺🇸 USA</span>
+          <span class="market-tag">🇨🇦 Canada</span>
+          <span class="market-tag">🇧🇷 Brazil</span>
+          <span class="market-tag">🇲🇽 Mexico</span>
+          <span class="market-tag">🇨🇴 Colombia</span>
+          <span class="market-tag">🇵🇪 Peru</span>
+        </div>
+      </div>
+      <div class="region-card anim">
+        <div class="region-flag">🌍</div>
+        <h3>EUROPE</h3>
+        <div class="tagline">Innovation Hub</div>
+        <p>Our European operations lead R&D and sustainable infrastructure across major economies and emerging markets.</p>
+        <div class="market-list">
+          <span class="market-tag">🇬🇧 UK</span>
+          <span class="market-tag">🇩🇪 Germany</span>
+          <span class="market-tag">🇫🇷 France</span>
+          <span class="market-tag">🇳🇱 Netherlands</span>
+          <span class="market-tag">🇵🇱 Poland</span>
+          <span class="market-tag">🇸🇪 Sweden</span>
+        </div>
+      </div>
+      <div class="region-card anim">
+        <div class="region-flag">🌏</div>
+        <h3>ASIA-PACIFIC</h3>
+        <div class="tagline">Growth Engine</div>
+        <p>Fastest-growing region with smart logistics networks connecting manufacturing hubs to global markets.</p>
+        <div class="market-list">
+          <span class="market-tag">🇸🇬 Singapore</span>
+          <span class="market-tag">🇯🇵 Japan</span>
+          <span class="market-tag">🇨🇳 China</span>
+          <span class="market-tag">🇦🇺 Australia</span>
+          <span class="market-tag">🇮🇳 India</span>
+          <span class="market-tag">🇻🇳 Vietnam</span>
+        </div>
+      </div>
+      <div class="region-card anim">
+        <div class="region-flag">🕌</div>
+        <h3>MIDDLE EAST</h3>
+        <div class="tagline">Energy Transition Hub</div>
+        <p>Strategic energy partnerships driving the region's historic transition from fossil fuels to renewables.</p>
+        <div class="market-list">
+          <span class="market-tag">🇦🇪 UAE</span>
+          <span class="market-tag">🇸🇦 Saudi Arabia</span>
+          <span class="market-tag">🇶🇦 Qatar</span>
+          <span class="market-tag">🇰🇼 Kuwait</span>
+        </div>
+      </div>
+      <div class="region-card anim">
+        <div class="region-flag">🌍</div>
+        <h3>AFRICA</h3>
+        <div class="tagline">Emerging Frontier</div>
+        <p>Investing in infrastructure and clean energy to power Africa's rapidly growing economies and populations.</p>
+        <div class="market-list">
+          <span class="market-tag">🇰🇪 Kenya</span>
+          <span class="market-tag">🇳🇬 Nigeria</span>
+          <span class="market-tag">🇿🇦 South Africa</span>
+          <span class="market-tag">🇲🇦 Morocco</span>
+          <span class="market-tag">🇪🇬 Egypt</span>
+        </div>
+      </div>
+      <div class="region-card anim">
+        <div class="region-flag">🗺️</div>
+        <h3>NEW MARKETS</h3>
+        <div class="tagline">2025–2026 Expansion</div>
+        <p>Active expansion into high-growth frontier markets with strong demand for energy and digital infrastructure.</p>
+        <div class="market-list">
+          <span class="market-tag">🇵🇰 Pakistan</span>
+          <span class="market-tag">🇧🇩 Bangladesh</span>
+          <span class="market-tag">🇹🇿 Tanzania</span>
+          <span class="market-tag">🇨🇱 Chile</span>
+          <span class="market-tag">🇮🇩 Indonesia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICE IMAGE GALLERY -->
+  <section class="office-gallery container">
+    <p class="label anim">Our Spaces</p>
+    <h2 class="section-title anim" style="margin-bottom:2rem;">OFFICES AROUND <span class="accent">THE WORLD</span></h2>
+    <div class="gallery-masonry anim">
+      <div class="g-img tall"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&q=80" alt="New York HQ"/></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1520986606214-8b456906c813?w=500&q=80" alt="London Office"/></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Singapore Office"/></div>
+      <div class="g-img wide"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80" alt="Dubai Office"/></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=500&q=80" alt="Tokyo Office"/></div>
+    </div>
+  </section>
+
+  <!-- INTERNATIONAL MARKETS LIST -->
+  <section class="markets-section container">
+    <p class="label anim">Full List</p>
+    <h2 class="anim" style="font-family:var(--font-display); font-size:2.2rem; letter-spacing:0.06em; margin-bottom:2rem;">ALL INTERNATIONAL <span style="color:var(--teal);">MARKETS</span></h2>
+    <div class="markets-list anim">
+      <div class="market-item"><span class="flag">🇺🇸</span> United States</div>
+      <div class="market-item"><span class="flag">🇬🇧</span> United Kingdom</div>
+      <div class="market-item"><span class="flag">🇩🇪</span> Germany</div>
+      <div class="market-item"><span class="flag">🇫🇷</span> France</div>
+      <div class="market-item"><span class="flag">🇸🇬</span> Singapore</div>
+      <div class="market-item"><span class="flag">🇯🇵</span> Japan</div>
+      <div class="market-item"><span class="flag">🇨🇳</span> China</div>
+      <div class="market-item"><span class="flag">🇦🇪</span> UAE</div>
+      <div class="market-item"><span class="flag">🇸🇦</span> Saudi Arabia</div>
+      <div class="market-item"><span class="flag">🇦🇺</span> Australia</div>
+      <div class="market-item"><span class="flag">🇧🇷</span> Brazil</div>
+      <div class="market-item"><span class="flag">🇨🇦</span> Canada</div>
+      <div class="market-item"><span class="flag">🇮🇳</span> India</div>
+      <div class="market-item"><span class="flag">🇿🇦</span> South Africa</div>
+      <div class="market-item"><span class="flag">🇰🇪</span> Kenya</div>
+      <div class="market-item"><span class="flag">🇳🇬</span> Nigeria</div>
+      <div class="market-item"><span class="flag">🇲🇽</span> Mexico</div>
+      <div class="market-item"><span class="flag">🇳🇱</span> Netherlands</div>
+      <div class="market-item"><span class="flag">🇸🇪</span> Sweden</div>
+      <div class="market-item"><span class="flag">🇵🇱</span> Poland</div>
+      <div class="market-item"><span class="flag">🇶🇦</span> Qatar</div>
+      <div class="market-item"><span class="flag">🇻🇳</span> Vietnam</div>
+      <div class="market-item"><span class="flag">🇮🇩</span> Indonesia</div>
+      <div class="market-item"><span class="flag">🇲🇦</span> Morocco</div>
+      <div class="market-item"><span class="flag">🇨🇴</span> Colombia</div>
+      <div class="market-item"><span class="flag">🇵🇪</span> Peru</div>
+      <div class="market-item"><span class="flag">🇨🇱</span> Chile</div>
+      <div class="market-item"><span class="flag">🇪🇬</span> Egypt</div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners-section container">
+    <p class="label anim">Our Ecosystem</p>
+    <h2 class="section-title anim">PARTNER <span class="accent">ORGANIZATIONS</span></h2>
+    <p style="color:var(--white-dim); max-width:580px; font-size:0.95rem;" class="anim">Vortex Global collaborates with a global network of NGOs, governmental bodies, research institutions, and industry leaders.</p>
+    <div class="partners-grid" style="margin-top:2.5rem;">
+      <div class="partner-card anim"><div class="partner-icon">🌐</div><div class="partner-name">UN Global Compact</div><div class="partner-type">International Body</div></div>
+      <div class="partner-card anim"><div class="partner-icon">⚡</div><div class="partner-name">IRENA</div><div class="partner-type">Energy Partner</div></div>
+      <div class="partner-card anim"><div class="partner-icon">🏦</div><div class="partner-name">World Bank Group</div><div class="partner-type">Finance Partner</div></div>
+      <div class="partner-card anim"><div class="partner-icon">🚢</div><div class="partner-name">Maersk</div><div class="partner-type">Logistics Alliance</div></div>
+      <div class="partner-card anim"><div class="partner-icon">🔬</div><div class="partner-name">MIT Innovation Lab</div><div class="partner-type">R&D Partner</div></div>
+      <div class="partner-card anim"><div class="partner-icon">🌿</div><div class="partner-name">WWF</div><div class="partner-type">Sustainability NGO</div></div>
+      <div class="partner-card anim"><div class="partner-icon">🏥</div><div class="partner-name">WHO Foundation</div><div class="partner-type">Health Partner</div></div>
+      <div class="partner-card anim"><div class="partner-icon">📡</div><div class="partner-name">ITU</div><div class="partner-type">Tech Standards</div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.6rem;">
+          <div class="logo-mark"></div><span class="logo-text-main">VORTEX</span>
+        </div>
+        <p>A multinational conglomerate driving innovation across energy, logistics, and technology in 28 countries worldwide.</p>
+      </div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="operations.html">Global Operations</a></li><li><a href="services.html">Products & Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Regions</h5><ul>
+        <li><a href="#">Americas</a></li><li><a href="#">Europe</a></li>
+        <li><a href="#">Asia-Pacific</a></li><li><a href="#">Middle East</a></li><li><a href="#">Africa</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5>
+        <p>📍 1 World Trade Center, NY</p><p>📧 info@vortexglobal.com</p><p>📞 +1 (212) 555-0100</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Vortex Global Industries. All rights reserved.</span>
+      <div style="display:flex; gap:1.5rem;"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

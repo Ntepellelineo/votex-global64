@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vortex Global — Products & Services</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <div class="logo-mark"></div>
+      <div>
+        <span class="logo-text-main">VORTEX</span>
+        <span class="logo-text-sub">Global Industries</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="operations.html">Global Operations</a></li>
+      <li><a href="services.html" class="active">Products & Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <p class="label" style="position:relative;z-index:1;">What We Offer</p>
+    <h1>PRODUCTS & <span class="accent">SERVICES</span></h1>
+    <p>Six core divisions delivering world-class solutions across energy, technology, logistics, infrastructure, finance, and healthcare.</p>
+  </header>
+
+  <section class="services-section container">
+
+    <!-- VIDEO INTRO for Services -->
+    <p class="label anim">Overview</p>
+    <h2 class="section-title anim">OUR <span class="accent">DIVISIONS</span></h2>
+    <div class="video-wrap anim" style="max-width:900px; margin:0 auto 5rem; border-radius:16px; overflow:hidden; box-shadow:var(--shadow), var(--shadow-teal); border:var(--border); aspect-ratio:16/9;">
+      <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="Vortex Global Divisions Overview"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+
+    <!-- SERVICES GRID -->
+    <div class="services-grid" style="margin-bottom:4rem;">
+      <div class="service-card anim">
+        <div class="service-num">01</div>
+        <h3>CLEAN ENERGY</h3>
+        <p>End-to-end renewable energy solutions — from large-scale solar farms and offshore wind parks to green hydrogen production facilities across 16 markets.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">Utility-scale solar PV installations</li>
+          <li style="list-style:disc;">Offshore & onshore wind parks</li>
+          <li style="list-style:disc;">Green hydrogen electrolysers</li>
+          <li style="list-style:disc;">Battery energy storage systems</li>
+          <li style="list-style:disc;">Smart grid management software</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">Solar</span><span class="stag">Wind</span><span class="stag">Hydrogen</span><span class="stag">Storage</span>
+        </div>
+      </div>
+
+      <div class="service-card anim">
+        <div class="service-num">02</div>
+        <h3>SMART LOGISTICS</h3>
+        <p>AI-powered supply chain intelligence — real-time freight tracking, predictive routing, and last-mile delivery optimization for 1,200+ enterprise clients.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">Global freight & shipping management</li>
+          <li style="list-style:disc;">AI-driven demand forecasting</li>
+          <li style="list-style:disc;">Cold chain & perishable logistics</li>
+          <li style="list-style:disc;">Autonomous warehouse systems</li>
+          <li style="list-style:disc;">Last-mile delivery platforms</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">AI Routing</span><span class="stag">Freight</span><span class="stag">Automation</span>
+        </div>
+      </div>
+
+      <div class="service-card anim">
+        <div class="service-num">03</div>
+        <h3>TECH VENTURES</h3>
+        <p>Investing in and commercializing breakthrough technologies — our VTX-Q quantum computing platform is already deployed in 3 national financial systems.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">Quantum computing (VTX-Q)</li>
+          <li style="list-style:disc;">Enterprise AI & machine learning</li>
+          <li style="list-style:disc;">Cybersecurity solutions</li>
+          <li style="list-style:disc;">Biotech & genomics research</li>
+          <li style="list-style:disc;">IoT infrastructure platforms</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">Quantum</span><span class="stag">AI/ML</span><span class="stag">Biotech</span>
+        </div>
+      </div>
+
+      <div class="service-card anim">
+        <div class="service-num">04</div>
+        <h3>INFRASTRUCTURE</h3>
+        <p>Designing, financing, and building critical infrastructure — roads, ports, smart cities, and telecommunications networks for governments and developers.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">Smart city design & development</li>
+          <li style="list-style:disc;">Port & airport construction</li>
+          <li style="list-style:disc;">Telecoms & fibre networks</li>
+          <li style="list-style:disc;">Urban water & waste management</li>
+          <li style="list-style:disc;">Public transport systems</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">Smart Cities</span><span class="stag">Construction</span><span class="stag">Telecoms</span>
+        </div>
+      </div>
+
+      <div class="service-card anim">
+        <div class="service-num">05</div>
+        <h3>GLOBAL FINANCE</h3>
+        <p>Vortex Capital provides project finance, green bonds, and investment management services for large-scale infrastructure and clean energy developments worldwide.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">Project & infrastructure finance</li>
+          <li style="list-style:disc;">Green & sustainability bonds</li>
+          <li style="list-style:disc;">Cross-border M&A advisory</li>
+          <li style="list-style:disc;">ESG investment funds</li>
+          <li style="list-style:disc;">Trade & commodity finance</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">Project Finance</span><span class="stag">Green Bonds</span><span class="stag">ESG</span>
+        </div>
+      </div>
+
+      <div class="service-card anim">
+        <div class="service-num">06</div>
+        <h3>HEALTHTECH</h3>
+        <p>Our newest division: AI-powered diagnostic platforms, telemedicine infrastructure, and pharmaceutical cold-chain logistics serving 12 countries.</p>
+        <ul style="margin:0.8rem 0 1rem; padding-left:1.2rem; color:var(--white-dim); font-size:0.87rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="list-style:disc;">AI diagnostic imaging tools</li>
+          <li style="list-style:disc;">Telemedicine platforms</li>
+          <li style="list-style:disc;">Pharma cold-chain logistics</li>
+          <li style="list-style:disc;">Hospital infrastructure</li>
+          <li style="list-style:disc;">Genomics data platforms</li>
+        </ul>
+        <div class="service-tags">
+          <span class="stag">AI Diagnostics</span><span class="stag">Telemedicine</span><span class="stag">Genomics</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE GALLERY of Products/Offices -->
+    <p class="label anim">In Action</p>
+    <h2 class="section-title anim" style="margin-bottom:2rem;">PRODUCT <span class="accent">GALLERY</span></h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:5rem;" class="anim">
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=500&q=80" alt="Solar farm" style="height:100%;"/>
+      </div>
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Smart warehouse logistics" style="height:100%;"/>
+      </div>
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="Technology hardware" style="height:100%;"/>
+      </div>
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Infrastructure construction" style="height:100%;"/>
+      </div>
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80" alt="Financial trading floor" style="height:100%;"/>
+      </div>
+      <div style="border-radius:12px; overflow:hidden; height:200px; border:var(--border);">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&q=80" alt="Healthcare technology" style="height:100%;"/>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:var(--dark-2); border:var(--border); border-radius:16px; padding:3.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;" class="anim">
+      <div>
+        <h3 style="font-family:var(--font-display); font-size:2rem; letter-spacing:0.06em; margin-bottom:0.5rem;">READY TO WORK WITH <span style="color:var(--teal);">VORTEX?</span></h3>
+        <p style="color:var(--white-dim); max-width:500px;">Whether you're a government, enterprise, or investor — we'd love to explore how Vortex Global can add value to your operations.</p>
+      </div>
+      <a href="contact.html" class="btn btn-teal">Contact Our Team ↗</a>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.6rem;">
+          <div class="logo-mark"></div><span class="logo-text-main">VORTEX</span>
+        </div>
+        <p>A multinational conglomerate driving innovation across energy, logistics, and technology in 28 countries worldwide.</p>
+      </div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="operations.html">Global Operations</a></li><li><a href="services.html">Products & Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Industries</h5><ul>
+        <li><a href="#">Clean Energy</a></li><li><a href="#">Smart Logistics</a></li>
+        <li><a href="#">Technology</a></li><li><a href="#">Infrastructure</a></li>
+        <li><a href="#">Healthcare</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5>
+        <p>📍 1 World Trade Center, NY</p><p>📧 info@vortexglobal.com</p><p>📞 +1 (212) 555-0100</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Vortex Global Industries. All rights reserved.</span>
+      <div style="display:flex; gap:1.5rem;"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
